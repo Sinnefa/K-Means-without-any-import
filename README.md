@@ -16,7 +16,7 @@ _Reading level: average/high_
 
 In my opinion everyone should see what's under the bonnet of your car, at least one in a lifetime. You should be curious to know how things work. Explore TVs, video games consoles, mobile phones, mould, yeast, eggs! I did all these and I suggest you doing it too... I never opened up a human being, yet... don't worry.
 
-One of the most beautiful things I know is the so called logical thinking, or algorithmic thinking, if you want to make it sound cooler. I see algorithms as a synonym of logic. Unlike other sciences, in mathematics et similia, you don't really need to memorise things by heart, even if you don't remember something, you can derive it.
+One of the most beautiful things I know is the so called logical thinking, or algorithmic thinking, if you want to make it sound cooler. I see algorithms as a synonym of logic. Unlike other sciences, in mathematics et similia, you don't really need to memorise things by heart, even if you don't remember anything, you can derive it.
 
 In machine learning one of the easiest and yet most powerful algorithms for unsupervised learning is K-Means, which essentially groups things that are closer for one reason, call it similar shape, colour, geometrical distance. K-Means also has the great advantage of being very easy to implement.
 
@@ -33,7 +33,7 @@ I will use a mind-map to help me walk you though this beautiful journey under th
 
 **The Algorithm: K-Means**
 
-Believe it or not, this is the easy part: [**K-Means**](https://en.wikipedia.org/wiki/K-means_clustering). The algorithm is based on [**clustering**](https://en.wikipedia.org/wiki/Cluster_analysis) (A) things together according to some property. For the sake of this article we are using geometrical distance, the [**Euclidean distance**](https://en.wikipedia.org/wiki/Euclidean_distance) (B).
+Believe it or not, this is the easy part: [**K-Means**](https://en.wikipedia.org/wiki/K-means_clustering). The algorithm is based on [**clustering**](https://en.wikipedia.org/wiki/Cluster_analysis) (A) things together according to some property. For the sake of this article, we are using geometrical distance, the [**Euclidean distance**](https://en.wikipedia.org/wiki/Euclidean_distance) (B).
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/algo_flow.png" width=400>
 
