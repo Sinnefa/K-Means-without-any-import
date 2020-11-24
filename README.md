@@ -61,7 +61,7 @@ With this trick we could lay out clumps along a line or any curve but what would
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_flow.png" width=400>
 
-Sine (C) and cosine (D) are implemented in the **math** library which once again, we do not want to use. Nevertheless, we can implement sine and cosine using our **_powerful friend_** [**Taylor series**](https://en.wikipedia.org/wiki/Taylor_series) (B) which actually require the [**factorial**](https://en.wikipedia.org/wiki/Factorial) (D) operations, which we can easily implemented with [**recursion**](https://en.wikipedia.org/wiki/Recursion_(computer_science)) (there exist other ways but I like recursion).
+Sine (C) and cosine (D) are implemented in the **math** library which once again, we do not want to use. Nevertheless, we can implement sine and cosine using our **_powerful friend_** [**Taylor series**](https://en.wikipedia.org/wiki/Taylor_series) (B) which actually require the [**factorial**](https://en.wikipedia.org/wiki/Factorial) (D) operations, which we can be easily implemented with [**recursion**](https://en.wikipedia.org/wiki/Recursion_(computer_science)) (there exist other ways but I like recursion).
 
 We are done, we have understood what we need, let's see how to implement every bit.
 
