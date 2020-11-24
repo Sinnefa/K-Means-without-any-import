@@ -1,4 +1,4 @@
-## Machine Learning without using any library, not even math. K-Means applied on random trigonometrically scattered and clustered data points.
+## Machine Learning without using any library, not even math. K-Means applied on random trigonometrically scattered and clustered data points
 
 _Reading level: average/high_
 
@@ -37,7 +37,7 @@ Believe it or not, this is the easy part: [**K-Means**](https://en.wikipedia.org
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/algo_flow.png" width=400>
 
-Euclidean distance depends on [**square root**](https://en.wikipedia.org/wiki/Square_root)  (C ) which is part of the **math** library we do not want to use, thus, we are going to implement one possible way to calculate it. We will implement the [**Heron's methods**](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) (D) which I like because it somewhat reminds me of [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation): it makes a guess, estimates and errors, and feeds it back to the formula until it gets close to the real value.
+Euclidean distance depends on [**square root**](https://en.wikipedia.org/wiki/Square_root)  (C ) which is part of the **math** library we do not want to use, thus, we are going to implement one possible way to calculate it. We will implement the [**Heron's methods**](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) (D) which I like because it somewhat reminds me of [**back propagation**](https://en.wikipedia.org/wiki/Backpropagation): it makes a guess, estimates and errors, and feeds it back to the formula until it gets close to the real value.
 
 This is all, the algorithm is a piece of cake.
 
@@ -67,7 +67,7 @@ We are done, we have understood what we need, let's see how to implement every b
 
 **The shopping list**
 
-1.  **Square root**: Heron's method (Backpropagation?)
+1.  **Square root**: Heron's method (Back propagation?)
 2.  **Euclidean distance**
 3.  **Randomness**: linear congruential generator
 4.  **Factorial**
@@ -80,7 +80,7 @@ We are done, we have understood what we need, let's see how to implement every b
 
 REMARK: ll following code snippets are not "perfect" in terms of speed and memory usage, they are implemented to be easy to understand.
 
-_Square root: Heron's method (Backpropagation?)_
+_Square root: Heron's method (Back propagation?)_
 
     def sqrt(s):
         x = s/2 # initial guess
