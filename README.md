@@ -7,14 +7,14 @@ _Reading level: average/high_
 -   How this idea came to be. Why should you care. Personal thoughts.
 -   We want to understand how things work.
 -   We will implement a machine learning algorithm without using any library.
--   We will implement random, sqrt, sine, cosine wihtout using any library
+-   We will implement random, sqrt, sine, cosine without using any library
 -   The mental steps to implement everything you need both DATA and Algorithm.
 -   Lack of data doesn't stop algorithms. Sometimes you don't have data but you can make it so that it tests what you want.
 -   **_Where there is a will there is a way._**
 
 **Introduction**
 
-In my opinion everyone should see what's under the bonnet of your car, at least one in a lifetime. You should be curious to know how things work. Explore TVs, video games consoles, mobile phones, mold, yeast, eggs! I did all these and I suggest you doing it too... I never opened up a human being, yet... don't worry.
+In my opinion everyone should see what's under the bonnet of your car, at least one in a lifetime. You should be curious to know how things work. Explore TVs, video games consoles, mobile phones, mould, yeast, eggs! I did all these and I suggest you doing it too... I never opened up a human being, yet... don't worry.
 
 One of the most beautiful things I know is the so called logical thinking, or algorithmic thinking, if you want to make it sound cooler. I see algorithms as a synonym of logic. Unlike other sciences, in mathematics et similia, you don't really need to memorise things by heart, even if you don't remember something, you can derive it.
 
@@ -78,7 +78,7 @@ We are done, we have understood what we need, let's see how to implement every b
 
 **Implementations**
 
-REMARAK: ll following code snippers are not "perfect" in terms of speed and memory usage, they are implemented to be easy to understand.
+REMARK: ll following code snippets are not "perfect" in terms of speed and memory usage, they are implemented to be easy to understand.
 
 _Square root: Heron's method (Backpropagation?)_
 
