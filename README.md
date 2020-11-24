@@ -180,11 +180,11 @@ _K-Means loop_
 
 Example with 8 clusters
 
-<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c1.png)
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c1.png" width=400>
 
 Example with 12 clusters
 
-<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c2.png)
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c2.png" width=400>
 
     new_assignment = []
     for n in range(iterations):
