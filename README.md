@@ -27,28 +27,40 @@ To perform K-Means we need two things: the algorithms and the data, in the follo
 **Let's reason together**
 
 I will use a mind-map to help me walk you though this beautiful journey under the bonnet of mathematical calculation and machine learning which lead to creating a data set and the implementation of K-Means. This is how I broke down the problem:
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/K-means%20without%20libs.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/K-means%20without%20libs.png" width=700>
+
+
 **The Algorithm: K-Means**
 
 Believe it or not, this is the easy part: [**K-Means**](https://en.wikipedia.org/wiki/K-means_clustering). The algorithm is based on [**clustering**](https://en.wikipedia.org/wiki/Cluster_analysis) (A) things together according to some property. For the sake of this article we are using geometrical distance, the [**Euclidean distance**](https://en.wikipedia.org/wiki/Euclidean_distance) (B).
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/algo_flow.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/algo_flow.png" width=400>
+
 Euclidean distance depends on [**square root**](https://en.wikipedia.org/wiki/Square_root)  (C ) which is part of the **math** library we do not want to use, thus, we are going to implement one possible way to calculate it. We will implement the [**Heron's methods**](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) (D) which I like because it somewhat reminds me of [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation): it makes a guess, estimates and errors, and feeds it back to the formula until it gets close to the real value.
 
 This is all, the algorithm is a piece of cake.
 
 **Input Data**
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/points_flow.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/points_flow.png" width=400>
+
 To test our implementation of K-Means, we want to generate a data set which contains scattered, grouped points (A). The choice is completely arbitrary so we choose to implement a generative function (B) which has two properties: periodicity, using trigonometric functions (C ), and randomness (D).
 
 _Randomness_
 
 To generate random numbers we needed, of course, a random number generator (A). Also in this case the first idea would be to import **random** library but well, we do not want to use it. Never mind, we can implement it using different techniques: [**bit-shifting**](https://en.wikipedia.org/wiki/Xorshift), an easy xor-based trick, or better, use a [**linear congruential generator**](https://en.wikipedia.org/wiki/Linear_congruential_generator) (C ) which is what C and other popular programming languages use. We will go for the latter, LCG, just because C is C.
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/random_flow.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/random_flow.png" width=400>
+
 At this point if we randomly generate points, let's say with -1<x<1 and -1<y<1, we will get a rectangle but, ideally, we want to create rounded shapes (clusters) thus we will bound (B) our generator with a [**circumference**](https://en.wikipedia.org/wiki/Circumference)  (C ) x^2+y^2<r^2. In this way we will obtain sparse clumps of random dots.
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/scatter.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/scatter.png" width=400>
+
 With this trick we could lay out clumps along a line or any curve but what would be the fun then? We are now going to implement some trigonometric functions (A) to distribute our clumps along some patterns. There are easier ways but I want to deliver the message that you can develop everything if you want and you can understand everything if you want.
 
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_flow.png)
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_flow.png" width=400>
+
 Sine (C) and cosine (D) are implemented in the **math** library which once again, we do not want to use. Nevertheless, we can implement sine and cosine using our **_powerful friend_** [**Taylor series**](https://en.wikipedia.org/wiki/Taylor_series) (B) which actually require the [**factorial**](https://en.wikipedia.org/wiki/Factorial) (D) operations, which we can easily implemented with [**recursion**](https://en.wikipedia.org/wiki/Recursion_(computer_science)) (there exist other ways but I like recursion).
 
 We are done, we have understood what we need, let's see how to implement every bit.
@@ -76,7 +88,7 @@ _Square root: Heron's method (Backpropagation?)_
         while x**2 - s > 0.01  or x**2 - s < -0.01:
             x = ((s/x)+x)/2
         return x
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/sqrt.png)
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/sqrt.png" width=400>
 _Euclidean distance_
 
     def distance(v1,v2):
@@ -99,7 +111,9 @@ _Randomness: linear congruential generator_
         m = 2**32
         x = (a*x+c) % m
         return x/m # to get number between 0 and 1
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/random.png)
+        
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/random.png" width=400>
+
 _Factorial_
 
     # Recursive factorial
@@ -120,7 +134,9 @@ _Taylor sine series (input degrees)_
             alpha = 2*n+1
             s = s + (((-1)**n)*(x**alpha))/factorial(alpha)
         return s
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/sine.png)
+        
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/sine.png" width=400>
+
 _Taylor cosine series (input degrees)_
 
     # Tylor cos x in degrees
@@ -131,10 +147,12 @@ _Taylor cosine series (input degrees)_
             alpha = 2*n
             s = s + (((-1)**n)*(x**alpha))/factorial(alpha)
         return s
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/cosine.png)
+        
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/cosine.png" width=400>
 _Random trigonometrically scattered and clustered points_
 
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_pattern.png)
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_pattern.png" width=400>
+
     center = []
     for n in range(ncoords):
         val = int(cos(n)+i)%clumpiness # Random function
@@ -161,8 +179,12 @@ _Random trigonometrically scattered and clustered points_
 _K-Means loop_
 
 Example with 8 clusters
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c1.png)Example with 12 clusters
-![enter image description here](https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c2.png)
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c1.png)
+
+Example with 12 clusters
+
+<img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/c2.png)
 
     new_assignment = []
     for n in range(iterations):
