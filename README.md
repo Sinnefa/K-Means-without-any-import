@@ -89,6 +89,7 @@ _Square root: Heron's method (Backpropagation?)_
             x = ((s/x)+x)/2
         return x
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/sqrt.png" width=400>
+
 _Euclidean distance_
 
     def distance(v1,v2):
@@ -149,6 +150,7 @@ _Taylor cosine series (input degrees)_
         return s
         
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/cosine.png" width=400>
+
 _Random trigonometrically scattered and clustered points_
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/trigo_pattern.png" width=400>
