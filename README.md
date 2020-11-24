@@ -53,7 +53,7 @@ To generate random numbers we needed, of course, a random number generator (A). 
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/random_flow.png" width=400>
 
-At this point if we randomly generate points, let's say with -1<x<1 and -1<y<1, we will get a rectangle but, ideally, we want to create rounded shapes (clusters) thus we will bound (B) our generator with a [**circumference**](https://en.wikipedia.org/wiki/Circumference)  (C ) x^2+y^2<r^2. In this way we will obtain sparse clumps of random dots.
+At this point if we randomly generate points, let's say with -1<x<1 and -1<y<1, we will get a rectangle but, ideally, we want to create rounded shapes (clusters) thus we will bound (B) our generator with a [**circumference**](https://en.wikipedia.org/wiki/Circumference)  (D) x^2+y^2<r^2. In this way we will obtain sparse clumps of random dots.
 
 <img src="https://github.com/Sinnefa/K-Means-without-any-import/blob/main/imgs/scatter.png" width=400>
 
