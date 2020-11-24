@@ -20,7 +20,7 @@ One of the most beautiful things I know is the so called logical thinking, or al
 
 In machine learning one of the easiest and yet most powerful algorithms for unsupervised learning is K-Means, which essentially groups things that are closer for one reason, call it similar shape, colour, geometrical distance. K-Means also has the great advantage of being very easy to implement.
 
-**In this article, we will walk through the implementation of K-Means and we will apply in on data we will generate: a scattered trigonometric random function. All this will be done without importing ANY library, not even to calculate sine, cosine, square roots and so on.**
+**In this article, we will walk through the implementation of K-Means and we will apply it on data we will generate: a scattered trigonometric random function. All this will be done without importing ANY library, not even to calculate sine, cosine, square roots and so on.**
 
 To perform K-Means we need two things: the algorithms and the data, in the following paragraph I will describe my reasoning, if you just want the code, scroll down to the dedicated section.
 
