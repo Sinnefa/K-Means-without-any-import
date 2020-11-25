@@ -14,7 +14,7 @@ _Reading level: average/high_
 
 **Introduction**
 
-In my opinion everyone should see what's under the bonnet of your car, at least one in a lifetime. You should be curious to know how things work. Explore TVs, video games consoles, mobile phones, mould, yeast, eggs! I did all these and I suggest you doing it too... I never opened up a human being, yet... don't worry.
+In my opinion everyone should see what's under the bonnet of your car, at least once in a lifetime. You should be curious to know how things work. Explore TVs, video games consoles, mobile phones, mould, yeast, eggs! I did all these and I suggest you doing it too... I never opened up a human being, yet... don't worry.
 
 One of the most beautiful things I know is the so called logical thinking, or algorithmic thinking, if you want to make it sound cooler. I see algorithms as a synonym of logic. Unlike other sciences, in mathematics et similia, you don't really need to memorise things by heart, even if you don't remember anything, you can derive it.
 
